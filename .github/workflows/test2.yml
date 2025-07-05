@@ -13,7 +13,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.12.2'  # Specify your Python version
+          python-version: '3.13.3'  # Specify your Python version
             
       - name: Create virtual environment
         run: python -m venv .venv
