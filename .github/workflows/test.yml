@@ -1,0 +1,13 @@
+name: My Example Workflow  # Optional workflow name
+
+on:
+  push:
+    branches: [ main ]  # Trigger on push to the 'main' branch
+
+jobs:
+  build:  # A job named 'build'
+    runs-on: SamWise # Specifies the type of runner to use
+    steps:
+      - uses: actions/checkout@v4  # Step to check out the repository code
+      - name: Run a script  # Name of the step
+        run: python WeatherStationDataServer.py
