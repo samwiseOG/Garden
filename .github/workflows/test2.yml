@@ -14,9 +14,13 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.12.2'  # Specify your Python version
+            
+      - name: Create virtual environment
+        run: python -m venv .venv
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          .venv/bin/pip install -r requirements.txt
 
       - name: Run Flask Server
-        run: python3 WeatherStationDataServer.py # Replace with your command to start Flask
+        run: .venv/bin/python WeatherStationDataServer.py # Replace with your command to start Flask
