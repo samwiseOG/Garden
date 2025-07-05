@@ -1,0 +1,25 @@
+name: Run Flask Server
+
+on:
+  push:
+    branches:
+      - main  # Or the branch you want to trigger the workflow
+
+jobs:
+  run-flask:
+    runs-on: SamWise  # Use your self-hosted runner
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'  # Specify your Python version
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Flask Server
+        run: python3 WeatherStationDataServer.py # Replace with your command to start Flask
