@@ -1,9 +1,6 @@
 name: Run Flask Server
 
-on:
-  push:
-    branches:
-      - main  # Or the branch you want to trigger the workflow
+on: workflow_dispatch
 
 jobs:
   run-flask:
