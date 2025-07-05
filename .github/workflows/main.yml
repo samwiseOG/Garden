@@ -1,0 +1,16 @@
+name: Run Script Example
+
+on: [push]
+
+jobs:
+  run-my-script:
+    runs-on: SamWise
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run my Python script
+        run: |
+          python WeatherStationDataServer.py
+
