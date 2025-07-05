@@ -8,8 +8,8 @@ import shutil
 
 app = Flask(__name__)
 
-DATA_DIR = "data"
-ARCHIVE_DIR = "data_archive"
+DATA_DIR = "data/active_data"
+ARCHIVE_DIR = "data/closed_jsons"
 file_base = "weatherJson_"
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(ARCHIVE_DIR, exist_ok=True)
