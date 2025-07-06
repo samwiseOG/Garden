@@ -10,16 +10,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: "3.13"
-          cache: "pip"
-        env:
-              AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache  # Specify your Python version
-            
       - name: Create virtual environment
-        run: python -m venv .venv
+        run: python3 -m venv .venv
 
       - name: Install dependencies
         run: |
