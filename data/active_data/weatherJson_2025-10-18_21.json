@@ -1,0 +1,62 @@
+[
+  {
+    "time": 1760837810,
+    "sensor": "temperature",
+    "value": 24.18288
+  },
+  {
+    "time": 1760837810,
+    "sensor": "humidity",
+    "value": 51.76303
+  },
+  {
+    "time": 1760837820,
+    "sensor": "temperature",
+    "value": 24.17754
+  },
+  {
+    "time": 1760837820,
+    "sensor": "humidity",
+    "value": 51.7306
+  },
+  {
+    "time": 1760837830,
+    "sensor": "temperature",
+    "value": 24.18555
+  },
+  {
+    "time": 1760837830,
+    "sensor": "humidity",
+    "value": 51.98047
+  },
+  {
+    "time": 1760837840,
+    "sensor": "temperature",
+    "value": 24.15884
+  },
+  {
+    "time": 1760837840,
+    "sensor": "humidity",
+    "value": 52.27039
+  },
+  {
+    "time": 1760837850,
+    "sensor": "temperature",
+    "value": 24.12947
+  },
+  {
+    "time": 1760837850,
+    "sensor": "humidity",
+    "value": 52.86549
+  },
+  {
+    "time": 1760837860,
+    "sensor": "temperature",
+    "value": 24.14282
+  },
+  {
+    "time": 1760837860,
+    "sensor": "humidity",
+    "value": 52.74151
+  }
+]
